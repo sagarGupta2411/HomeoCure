@@ -1,6 +1,7 @@
 package in.aplicatia.homeocure;
 
 import android.animation.Animator;
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.ImageView;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends Activity {
 
 
 
@@ -39,7 +40,20 @@ public class SplashScreen extends AppCompatActivity {
                             ViewAnimationUtils.createCircularReveal(myView, cx, cy, 0, finalRadius);
 
                     // make the view visible and start the animation
-                    myView.setBackgroundColor(Color.BLUE);
+                    myView.setBackgroundColor(getResources().getColor(R.color.colorPrimary
+
+
+
+
+
+
+
+
+
+
+
+
+                    ));
                     anim.setDuration(2000);
                     anim.start();
                 } else {
