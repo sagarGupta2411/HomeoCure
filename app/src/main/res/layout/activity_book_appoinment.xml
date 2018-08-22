@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookAppoinment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/gradient" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/askfreeque"
+            app:border_color="@color/cardview_dark_background"
+            app:border_width="4dp"
+            android:id="@+id/ivdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dr. Habib Khan"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tvName"/>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#455A64"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qualification :"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B.H.M.S."
+                    android:id="@+id/tvFatherName"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialization :"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chronic Diseases"
+                    android:id="@+id/tvMotherName"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="#EEEEEE"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clinic Timing:"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:text="Morning: 10:00 AM To 01:00 PM"
+                android:id="@+id/tvStudentContact"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                android:text="Evening: 05:00 PM To 09:00 PM"
+                android:id="@+id/tvEmail"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
