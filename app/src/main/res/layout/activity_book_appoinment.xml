@@ -38,7 +38,7 @@
             android:textColor="@color/cardview_dark_background"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:id="@+id/tvName"/>
+            android:id="@+id/name"/>
 
 
 
@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="B.H.M.S."
-                    android:id="@+id/tvFatherName"
+                    android:id="@+id/qulification"
                     android:textColor="@color/colorWhite"
                     android:layout_marginLeft="8dp"
                     android:textStyle="bold"
@@ -98,7 +98,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Chronic Diseases"
-                    android:id="@+id/tvMotherName"
+                    android:id="@+id/specialization"
                     android:textColor="@color/colorWhite"
                     android:layout_marginLeft="8dp"
                     android:textStyle="bold"
@@ -132,7 +132,7 @@
                 android:textSize="18dp"
                 android:layout_marginTop="10dp"
                 android:text="Morning: 10:00 AM To 01:00 PM"
-                android:id="@+id/tvStudentContact"/>
+                android:id="@+id/morning"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -140,11 +140,22 @@
                 android:layout_marginTop="8dp"
                 android:textSize="18dp"
                 android:text="Evening: 05:00 PM To 09:00 PM"
-                android:id="@+id/tvEmail"/>
+                android:id="@+id/evening"/>
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_layout"
+        android:text="Book Appoinment"
+        android:layout_alignParentBottom="true"
+        android:textColor="#e5e5e5"
+        android:textSize="18dp" />
 
 
 </RelativeLayout>

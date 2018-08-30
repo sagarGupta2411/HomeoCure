@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
                     go.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            startActivity(new Intent(MainActivity.this,BookAppoinment.class));
+                            startActivity(new Intent(MainActivity.this,BookAppoinment.class).putExtra("city",s).putExtra("clinic",spinner.getSelectedItem().toString()));
                         }
                     });
 
